@@ -1,1 +1,1 @@
-# mi349_finalproj
+# mi349_blog

@@ -1,0 +1,122 @@
+html{
+    background: #e3e3e3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    padding: 40px;
+    color: #242424;
+    border-top: 10px solid #242424;
+    background: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header {
+    background-color: #0e0d0d;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+#my_blog {
+    border-top: 1px dotted #ccc;
+
+}
+
+.blog_multiple_posts {
+    border-bottom: 1px dotted #ccc;
+
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+form label {
+    flex-basis: 100%;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    flex: 1 1 200px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
