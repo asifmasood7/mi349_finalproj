@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Baby Goats</title>
+    <title>GoldenGrass Valley Farm - Contact</title>
 </head>
 <body>
     <header>
-        <h1>From Barn to Yard: Baby Goats Take Charge</h1>
-        <nav>
+        <nav class = "contact-nav">
             <ul>
-                <li><a href="index.html">Main</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
             </ul>
         </nav>
     </header>
     <section>
         <h2>Contact Form:</h2>
-        <form>
+        <form id = "contactForm">
             <label>
                 Name:
                 <input type="text"> 
@@ -33,18 +31,40 @@
             <label>
                 Reason for Contact:
                 <select>
-                    <option value="sayingHi">Saying Hi</option>
-                    <option value="contractor">Looking for a Contractor</option>
-                    <option value="interview">Interested in an Interview</option>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="meeting">Interested in Meeting</option>
+                    <option value="contractor">Looking for Contractor</option>
+                    <option value="tour">Interested in Farm Tour</option>
+                    <option value="sale">Looking for Goat Sale</option>
                 </select>
+            </label>
+            <label>
+                If Goat Sale, what goat are you interested in?
+                <select>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="black">Goat 1</option>
+                    <option value="white">Goat 2</option>
+                    <option value="dark brownish">Goat 3</option>
+                </select>
+            </label>
+            <label>
+                If you chose something else, please leave a detailed comment below and we'll contact you soon.
             </label>
             <label>
                 <br><br>
                 <textarea rows="4" cols="50" placeholder="Type your comments here..."></textarea>
             </label>
             <br><br>
-            <button>Submit</button>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
         </form>
     </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out to us. Your submission has been successfully received. We will contact you shortly.');
+        });
+    </script>
 </body>
 </html>

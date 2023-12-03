@@ -13,11 +13,24 @@ body {
 
 h1 {
     font-size: 3em;
-    margin: 0;
+    margin-top: 20px;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+p {
+    line-height: 1.4em;
+    color: black;
+    font-size: 2em;
 }
 
 header {
-    background-color: #0e0d0d;
+    background-color: #fff;
     color: #fff;
     padding: 10px 0;
     position: sticky;
@@ -25,38 +38,160 @@ header {
     z-index: 10;
 }
 
+.logo {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    padding: 0px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 20% 5%
+}
+
+.logo_1 {
+    width: 100%;
+    display: block;
+    margin-top: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo_1 img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin-left: 0; 
+    margin-right: auto; 
+}
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 60px;
 }
 
 nav a {
-    text-decoration: underline;
-    color: white;
+    text-decoration: none;
+    color: rgb(3, 2, 2);
     padding: 5px 10px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #c0c4c4;
+    border-radius: 10px;
 }
 
-p {
-    line-height: 1.4em;
+.about-nav a {
+    font-size: 22px;
 }
 
-#my_blog {
-    border-top: 1px dotted #ccc;
-
+.contact-nav a {
+    font-size: 22px;
 }
 
-.blog_multiple_posts {
-    border-bottom: 1px dotted #ccc;
-
+.button-container {
+    margin-left: 0;
 }
 
-article {
+textarea, .button-container {
+    display: block;
+    width: 100%;
+}
+
+.button-container button {
+    width: auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.product-card h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #0288d1;
+    font-size: 1.2em;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-us-content h1, .about-us-content h2 {
+    color: #333;
+    text-align: center;
+}
+
+.about-us-content section {
     margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+.about-us-content p {
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+a.no-link-style {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+a.no-link-style:hover {
+    text-decoration: underline;
 }
 
 form {
@@ -66,6 +201,7 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 form label {
@@ -106,6 +242,7 @@ td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
+    color: black;
 }
 
 th {
@@ -113,10 +250,49 @@ th {
     color: white;
 }
 
+
+.goat-sale-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.goat-sale-item img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sale-price {
+    color: red;
+    font-weight: bold;
+}
+
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
+}
+
+.fun-fact {
+    background-color: #dfe4ea;
+    color: #1e272e;
+    padding: 30px;
+    margin: 20px 0;
+    border: 2px solid #ced6e0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fun-fact p {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 1px;
 }
